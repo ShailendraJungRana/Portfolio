@@ -30,13 +30,14 @@ const Navbar = () => {
     //py-1 is bootstrap class that adds padding to vertical
     <div className="flex justify-between items-center w-full h-20px-2 py-2  text-black fixed bg-white fixed"> 
       <div>
-        <h1 className="text-4xl font-bold font-signature ml-2 px-5 cursor-pointer" >ShailendraJR</h1>
+        <h1 className="text-3xl font-bold font-signature ml-4 px-5 cursor-pointer" >ShailendraJR</h1>
       </div>
-      <ul className='hidden md:flex'>
+      <ul className='hidden md:flex mr-15'> 
+      {/* //changes in here and li key mr-10 */}
 
       {links.map(({id,link}) =>(
            <li key={id} className='px-5 cursor-pointer capitalize font-medium 
-           text-black-500 hover:scale-105 duration-200'>{link}</li> //key={link,id}
+           text-black-500 hover:scale-105 duration-300 mr-10'>{link}</li> //key={link,id}
       ))}
       </ul>
       <div onClick={()=>setNav(!nav)} className='cursor-pointer pr-6 z-10 text-grey-500 md:hidden'>
