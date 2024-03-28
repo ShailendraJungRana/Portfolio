@@ -3,6 +3,15 @@ import HeroImage from "/Users/arun/Documents/project/Portfolio/src/assets/heroIm
 // import { MdKeyboardArrowRight } from "react-icons/md";
 
 const About = () => {
+  // const handleDownloadCV=()=>{
+  //   const link = document.createElement("a");
+  //   link.href='./src/assets/Shailendra-Jung-Rana';
+  //   link.download = "Shailendra-Jung-Rana.pdf";
+  //   document.body.appendChild(link);
+  //   link.click();
+  //   document.body.removeChild(link);
+  // };
+
   return (
      <div name='home' className='h-screen w-full bg-gradient-to-b' >
         <div className='max-w-screen-lg mx-auto flex flex-col texts-center 
@@ -20,7 +29,7 @@ const About = () => {
         </div>
 
         <div className='flex justify-center space-x-4 mt-8'>
-             <button className="bg-white hover:bg-gray-700 text-black font-bold py-2 px-4 rounded-full border-2 border-black">
+             <button className="bg-white hover:bg-gray-700 text-black font-bold py-2 px-4 rounded-full border-2 border-black " >
                Download CV
              </button>
 

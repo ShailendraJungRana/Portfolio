@@ -32,7 +32,7 @@ const Navbar = () => {
       <div>
         <h1 className="text-3xl font-bold font-signature ml-4 px-5 cursor-pointer" >ShailendraJR</h1>
       </div>
-      <ul className='hidden md:flex mr-15'> 
+      <ul className='hidden md:flex mr-15' > 
       {/* //changes in here and li key mr-10 */}
 
       {links.map(({id,link}) =>(
