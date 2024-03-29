@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'; // Import the specific icon
 import React, {useState} from 'react';
+import {Link} from "react-scroll";
 
 const Navbar = () => {
 
@@ -49,7 +50,14 @@ const Navbar = () => {
           
           <ul className='flex flex-col justify-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-white to-gray-800 text-black'>
       {links.map(({id,link}) =>(
-        <li key={id} className='px-4 cursor-pointer capitalize py-6 text-3xl'>{link}</li> //key={link,id}
+        <li key={id} className='px-4 cursor-pointer capitalize py-6 text-3xl'>
+          <Link
+            onClick={()=>setNav(!nav)}
+            to={Link}
+            smooth
+            duration={500}
+          >{Link}</Link>
+        </li> //key={link,id}
         ))} 
 
       </ul>
