@@ -38,27 +38,29 @@ const Navbar = () => {
 
       {links.map(({id,link}) =>(
            <li key={id} className='px-5 cursor-pointer capitalize font-medium 
-           text-black-500 hover:scale-105 duration-300 mr-10 py-4 lg:py-4'>{link}</li> //key={link,id}
+           text-black-500 hover:scale-105 duration-300 mr-10 py-4 lg:py-4'>
+
+          <Link to={link} smooth duration={500}>{link}
+            </Link>
+           </li> //key={link,id}
       ))}
       </ul>
-      <div onClick={()=>setNav(!nav)} className='cursor-pointer pr-6 z-10 text-grey-500 md:hidden'>
+
+      <div onClick={()=>setNav(!nav)} className='cursor-pointer pr-6 z-10 text-grey-500 md:hidden '>
         {nav ?  <FontAwesomeIcon icon={faTimes} style ={{fontSize: "24px"}}/> : <FontAwesomeIcon icon={faBars} style ={{fontSize: "24px"}}/>}
       </div>
-
         {nav && (
-          
-          
           <ul className='flex flex-col justify-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-white to-gray-800 text-black'>
-      {links.map(({id,link}) =>(
-        <li key={id} className='px-4 cursor-pointer capitalize py-6 text-3xl'>
-          <Link
-            onClick={()=>setNav(!nav)}
-            to={Link}
-            smooth
-            duration={500}
-          >{Link}</Link>
-        </li> //key={link,id}
-        ))} 
+             {links.map(({id,link}) =>(
+           <li key={id}
+            className='px-5 cursor-pointer capitalize font-medium 
+           text-black-500 hover:scale-105 duration-300 mr-10 py-4 lg:py-4'>
+
+          <Link onClick={()=>setNav(!nav)} to={link} smooth duration={500}>
+            {link}
+            </Link>
+           </li> 
+      ))}
 
       </ul>
         )}
@@ -68,6 +70,9 @@ const Navbar = () => {
 
 
 
+// {/*   
+//         <li key={id} className='px-4 cursor-pointer capitalize py-6 text-3xl'>
+//         </li>  */}
 // {/* <FontAwesomeIcon icon={faBars} style ={{fontSize: "24px"}}/> */}
 
 export default Navbar
