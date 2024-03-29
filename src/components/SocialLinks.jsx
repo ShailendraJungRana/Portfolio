@@ -52,15 +52,16 @@ function SocialLinks() {
 ];
 
         return (
-<div className='flex flex-col top-[35%] left-0 fixed'>
+<div className=' flex flex-col top-[35%] left-0 fixed'>
       <ul>
         {links.map(({id, child, href,style,download})=>(
             <li key={id}
-                className= {"flex justify-between items-center w-40 h-14 px-4 bg-white ml-[-100px] hover:ml-[-10px] hover:rounder-md duration-300 bg-white-500" + ""+ style}>
+                className= {" flex justify-between items-center w-40 h-14 px-4 py-6 bg-white ml-[-100px] hover:ml-[-10px] hover:rounder-md duration-300 bg-white-500 " + style}>
              <a href={href} 
-                className='flex justify-between items-center w-full text-black h-14 '
+                className='flex justify-between items-center w-full text-black '
                 download={download}
                 target='_blank'
+                rel='noreferrer'
               >
                  {child}
              </a>
