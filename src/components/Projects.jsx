@@ -11,11 +11,13 @@ const Projects = () => {
     const portfolio =[
         {
         id:1,
-        src:arrayDestruct
+        src:arrayDestruct,
+        href: 'https://github.com/ShailendraJungRana/5-mini-project/tree/main/google-book-api'
         },
         {
         id:2,
-        src:reactParallax
+        src:reactParallax,
+        href: 'https://github.com/ShailendraJungRana/5-mini-project/tree/main/google-book-api'
         },
         {
         id:3,
@@ -29,14 +31,15 @@ const Projects = () => {
         id:5,
         src:navbar
         },
-]
+];
+
 
   return (
-    <div name="portfolio"  className="w-full h-screen bg-to-b from-white    to-black-800
+    <div name="portfolio"  className="w-full h-screen bg-to-b from-white   to-black-800
     text-white md:h-screen"> 
     <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
     <div className='pb-10'> 
-    <p className='text-4xl font-bold inline border-b-4 border-gray-500 text-black'>
+    <p className='text-4xl font-bold inline border-b-4 border-gray-500 py-2 text-black'>
         Projects
 
     </p>
@@ -50,7 +53,7 @@ const Projects = () => {
         <div key ={id} className='shadow-md shadow-gray-600 rounded-lg'>
             <img src={src} alt='' className='rounder-md duration-200 hover:scale-105'/> 
             <div className='flex items-center justify-center'>
-            <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-black'> Demo </button> 
+            <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-black' > Demo </button> 
             {/* onclick handler use garni ani good to go */}
             <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-black' > Code</button>
             </div>
