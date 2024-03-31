@@ -1,54 +1,54 @@
 import React from 'react'
-import { FaGithub , FaLinkedin , FaFacebook} from "react-icons/fa";
-import {HiOutlineMail} from 'react-icons/hi';
+// import { FaGithub , FaLinkedin , FaFacebook} from "react-icons/fa";
+// import {HiOutlineMail} from 'react-icons/hi';
 
 const Contact = () => {
-  const SocialLink = [
-    {
-        id:1,
-        child:(
-            <>
-        LinkedIn <FaLinkedin  size={30}/> 
+//   const SocialLink = [
+//     {
+//         id:1,
+//         child:(
+//             <>
+//         LinkedIn <FaLinkedin  size={30}/> 
 
-        </>
-    ),
-    href:"https://www.linkedin.com/in/shailendra-jung-rana-aa78781a1/",
-    style:'rounderd-tr-md'
-},
-{
-    id:2,
-    child:(
-        <>
-        GitHub <FaGithub size={30} />
+//         </>
+//     ),
+//     href:"https://www.linkedin.com/in/shailendra-jung-rana-aa78781a1/",
+//     style:'rounderd-tr-md'
+// },
+// {
+//     id:2,
+//     child:(
+//         <>
+//         GitHub <FaGithub size={30} />
 
 
-        </>
-    ),
-    href:"https://github.com/ShailendraJungRana",
-},
-{
-    id:3,
-    child:(
-        <>
-        Mail<HiOutlineMail size={30}/>
-        </>
-    ),
-    href : "mailto:shailendera.jungrana@gmail.com",
-    style:'rounderd-tr-md' 
-},
-{
-    id:3,
-    child:(
-        <>
-       Facebook<FaFacebook size={30}/> 
+//         </>
+//     ),
+//     href:"https://github.com/ShailendraJungRana",
+// },
+// {
+//     id:3,
+//     child:(
+//         <>
+//         Mail<HiOutlineMail size={30}/>
+//         </>
+//     ),
+//     href : "mailto:shailendera.jungrana@gmail.com",
+//     style:'rounderd-tr-md' 
+// },
+// {
+//     id:3,
+//     child:(
+//         <>
+//        Facebook<FaFacebook size={30}/> 
 
-        </>
-    ),
-    href : "mailto:https://www.facebook.com/arun.jangrana/",
-    style:'rounderd-tr-md' 
-},
+//         </>
+//     ),
+//     href : "mailto:https://www.facebook.com/arun.jangrana/",
+//     style:'rounderd-tr-md' 
+// },
 
-];
+// ];
   return (
     <div name='contact ' className='w-full h-screen bg-gradient-to-b from-white-800 to-black'>
       <div className='flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full'>
@@ -67,7 +67,7 @@ const Contact = () => {
             </button>
             </form>
         </div>
-        <ul>
+        {/* <ul>
             {SocialLink.map(({id, child, href,style})=>(
             <li key={id}
                 className= {" flex justify-between items-center w-40 h-14 px-4 py-6 bg-white ml-[-100px] hover:ml-[-10px] hover:rounder-md duration-300 bg-white-500 " + style}>
@@ -80,7 +80,7 @@ const Contact = () => {
              </a>
              </li>
         ))}
-        </ul>
+        </ul> */}
       </div>
     </div>
   )

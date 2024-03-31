@@ -7,7 +7,17 @@ import tailwind from '../assets/tailwind.png'
 import github from '../assets/github.png'
 import figma from '../assets/Figma.png'
 import dribble from '../assets/dribble.png'
+import { FaArrowDown } from "react-icons/fa";
+
 const Experience = () => {
+
+    const handleScrollToExperience = () => {
+        const experienceSection = document.getElementsByName('experience')[0];
+        if (experienceSection) {
+          experienceSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
+
     const Technology =[
         {
             id:1,
@@ -81,6 +91,10 @@ const Experience = () => {
 
         </div>
       </div>
+      <div className='flex justify-end absolute bottom-0 right-5 mr-5 mb-5 down-arrow'>
+          <FaArrowDown className='animate-bounce' onClick={handleScrollToExperience}/>
+          
+        </div>
     </div>
   )
 }

@@ -21,7 +21,7 @@ const Shailendra = () => {
 
   return (
      <div name='home' className='h-screen w-full bg-gradient-to-b' >
-        <div className='max-w-screen-lg mx-auto flex flex-col texts-center 
+        <div className='max-w-screen-lg mx-auto flex flex-col justify-center items-center h-full px-4 py-3 md:flex-row texts-center 
         justify-center h-full px-4 py-3 md:flex-row'>
         <div className="flex justify-center items-center md:mr-0">
             <img src={HeroImage} alt="profile" className='mx-auto rounded-full w-60 h-60 md:w-60 md:h-60 '/>
