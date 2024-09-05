@@ -28,8 +28,8 @@ const About = () => {
             Crafting user-centric designs blending aesthetics with functionality. Proficient in Figma, Jitter, Webflow, and exploring React.js. Committed to staying ahead in UI/UX design and frontend development. Thrive on challenges, value teamwork, and open communication for exceptional digital experiences. Excited for a journey ahead, filled with creativity, innovation, and endless possibilities.
             </p>
         </div>
-        <div className='flex justify-end   bottom-5 right-5 mb-5 mr-14  '>
-          <FaArrowDown className='animate-bounce' onClick={handleScrollToAbout} />
+        <div className='flex justify-end   bottom-5 right-5 mb-5 mr-14 '>
+          <FaArrowDown id="about" className='animate-bounce' onClick={handleScrollToAbout} />
         
         </div>
     </div>

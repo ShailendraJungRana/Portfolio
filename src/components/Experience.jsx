@@ -11,12 +11,12 @@ import { FaArrowDown } from "react-icons/fa";
 
 const Experience = () => {
 
-    const handleScrollToExperience = () => {
-        const experienceSection = document.getElementsByName('experience')[0];
-        if (experienceSection) {
-          experienceSection.scrollIntoView({ behavior: 'smooth' });
-        }
-      };
+    // const handleScrollToExperience = () => {
+    //     const experienceSection = document.getElementsByName('Projects')[0];
+    //     if (experienceSection) {
+    //       experienceSection.scrollIntoView({ behavior: 'smooth' });
+    //     }
+    //   };
 
     const Technology =[
         {
@@ -92,7 +92,8 @@ const Experience = () => {
         </div>
       </div>
       <div className='flex justify-end absolute bottom-0 right-5 mr-5 mb-5 down-arrow'>
-          <FaArrowDown className='animate-bounce' onClick={handleScrollToExperience}/>
+          <FaArrowDown className='animate-bounce' /> 
+          {/* onClick={handleScrollToExperience} */}
           
         </div>
     </div>
