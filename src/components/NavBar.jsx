@@ -44,7 +44,7 @@ const Navbar = () => {
 return (
   <div className={`flex justify-between items-center w-full h-20 ${nav ? 'bg-to-b from-white to-gray-800' : 'bg-white'} fixed`}>
     <div>
-      <h1 className="text-3xl font-bold font-signature ml-4 px-5 cursor-pointer">ShailendraJR</h1>
+      <h1 className="text-3xl font-bold font-signature ml-4 px-5 hover:scale-105 duration-300 cursor-pointer">ShailendraJR</h1>
     </div>
     <div className="md:hidden">
       <div onClick={toggleNav} className="cursor-pointer pr-6 z-10 text-grey-500">

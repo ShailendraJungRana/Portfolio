@@ -18,7 +18,7 @@ const Shailendra = () => {
       
       <div className="flex justify-center items-center md:mr-0">
   <div className="w-60 h-60 md:w-60 md:h-60">
-    <img src={HeroImage} alt="profile" className='object-cover rounded-full w-full h-full' />
+    <img src={HeroImage} alt="profile" className='object-cover  rounded-full w-full h-full' />
   </div>
 </div>
 
