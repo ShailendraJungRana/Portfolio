@@ -1,7 +1,7 @@
 import React from 'react'
 import HeroImage from "../assets/shailendra.jpg";
 import { FaArrowDown } from "react-icons/fa";
-
+import pdf from '../assets/ShailendraJR.pdf'
 
 const Shailendra = () => {
   const handleScrollToAbout = () => {
@@ -31,7 +31,7 @@ const Shailendra = () => {
         </div>
 
         <div className='flex justify-center space-x-4 mt-8'>
-             <a href='/ShailendraJR.pdf'  target="_blank" className="bg-white hover:bg-gray-700 hover:text-white text-black font-bold py-2 px-4 rounded-full border-2 border-black "  >
+             <a href={pdf} download  target="_blank" rel="noopener noreferrer" className="bg-white  hover:bg-gray-700 hover:text-white text-black font-bold py-2 px-4 rounded-full border-2 border-black "  >
                Download CV
              </a>
 
@@ -43,7 +43,7 @@ const Shailendra = () => {
         </div>
         </div>
         </div>
-        <div id='about' className='flex justify-end absolute bottom-0 right-5 mr-5 mb-5 down-arrow'>
+        <div id='about' className='flex cursor-pointer justify-end absolute bottom-0 right-5 mr-5 mb-5 down-arrow'>
           <FaArrowDown className='animate-bounce' onClick={handleScrollToAbout} />
           
         </div>

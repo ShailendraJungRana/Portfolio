@@ -45,7 +45,7 @@ function SocialLinks() {
             Resume<BsFillPersonLinesFill size={30}/>
             </>
         ),
-        href : '/resume.pdf',
+        href : '/src/assets/ShailendraJR.png',
         style:'rounderd-br-md',
         download: true,
     },
@@ -63,6 +63,7 @@ function SocialLinks() {
                 target='_blank'
                 rel='noreferrer'
               >
+                
                  {child}
              </a>
              </li>

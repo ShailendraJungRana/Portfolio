@@ -1,7 +1,13 @@
 import React from 'react'
-
+import { FaArrowUp } from "react-icons/fa6";
 
 const Contact = () => {
+  const handleScrollToAbout = () => {
+    const aboutSection = document.getElementsByName('about')[0];
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <div id='contact' className='w-full h-screen bg-gradient-to-b mt-96 from-white-800 to-black'>
@@ -21,8 +27,11 @@ const Contact = () => {
             </button>
             </form>
         </div>
-       
       </div>
+      <div id='shailendrajr' className='flex justify-end absolute bottom-0 right-5 mr-5 mb-5 down-arrow'>
+          <FaArrowUp className='animate-bounce' onClick={handleScrollToAbout} />
+          
+        </div>
     </div>
   )
 }
